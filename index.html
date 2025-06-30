@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meowpedia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="view">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="main-nav">
+                <a href="#" class="logo">Meowpedia</a>
+                <ul class="navbar">
+                    <li class="menu-item">
+                        <a href="#home" class="menu-link">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#about" class="menu-link">About</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#videoPage" class="menu-link">video</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#cats" class="menu-link">Cats</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#photo" class="menu-link">Photo</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contact" class="menu-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Home Page -->
+        <section class="Main block" id="home">
+            <div class="main-content">
+                <h1><span>Meowpedia</span> Helps you to know about <br><span>Cats</span></h1>
+                <div class="info-box">
+                    <p>Get to know kinds of cats with Meowpedia and be part of our community of cats lovers and photography</p>
+                    <button class="btn">Get Started</button>
+                </div>
+            </div>
+            <div class="cat-info">
+                <h2>Dragon Li</h2>
+                <p>Dragon Li displays a golden brown, <br>broken mackerel tabby pattern, <br>distinctive ear tipping, <br>large almond shaped eyes and a <br> strong full bodied stature reminiscent <br>of its wild nature.</p>
+            </div>
+            <img src="dragonLi.png" alt="Dragon Li Cat" class="cat-image">
+        </section>
+        <!-- About Us -->
+        <section class="About block" id="about">
+            <div class="about-content">
+                <h3>ABOUT US</h1>
+                <h1>Know more <br> types of Cats <br> here</h1>
+                <p>Get to know all kinds of cats with meowpedia and be part of our<br>community of c at lovers and photography</p>
+                <button class="btn2">Get Started</button>
+            </div>
+            <img src="AboutCat.png" alt="Orange Cat" class="cat-image2">
+        </section>
+        <!-- Video -->
+        <section class="video block" id="videoPage">
+            <div class="video-content">
+                <h1>Let's explore the existing <span>Cats</span></h1>
+                <p>Know of kinds of cats with meowpedia and explore <br> their habitats through videos</p>
+            </div>
+            <div class="cat-video">
+                <img src="catvideo.png" alt="Cat Video">
+                <img src="start_btn.png" alt="Start Button" class="start_btn" onclick="playVideo()">
+                <img src="OIP.png" alt="cover" class="oip_cov">
+            </div>
+        </section>
+        <section class="video2" id="videoPlayer">
+            <div class="video-player">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="cat_learn.mp4" type="video/mp4">
+                </video>
+                <img src="close_btn.png" alt="Close Button" class="close_btn" onclick="stopVideo()">
+            </div>
+        </section>
+        <!-- Cats Information -->
+        <section class="information block" id="cats">
+            <div class="information-content">
+                <h1><span>Meow</span>pedia Information</h1>
+                <p>Meowpedia you can find information about cats in the world</p>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="Chartreux.png" alt="Name of Cat (Chartreux)">
+                    <h3>Chartreux</h3>
+                    <p>夏特尔猫</p>
+                    <a href="#" class="btn2">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <img src="EuropeanBurmese.png" alt="Name of Cat (European Burmese)">
+                    <h3>European Burmese</h3>
+                    <p>缅甸猫</p>
+                    <a href="#" class="btn2">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <img src="MaineCoon.png" alt="Name of Cat (Maine Coon)">
+                    <h3>Maine Coon</h3>
+                    <p>缅因猫</p>
+                    <a href="#" class="btn2">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <img src="RussianBlue.png" alt="Name of Cat (Russian Blue)">
+                    <h3>Russian Blue</h3>
+                    <p>俄羅斯藍貓</p>
+                    <a href="#" class="btn2">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <img src="YorkChocolate.png" alt="Name of Cat (York Chocolate)">
+                    <h3>York Chocolate</h3>
+                    <p>约克巧克力猫</p>
+                    <a href="#" class="btn2">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <img src="JapaneseBobtail.png" alt="Name of Cat (Japanese Bobtail)">
+                    <h3>Japanese Bobtail</h3>
+                    <p>日本短尾猫</p>
+                    <a href="#" class="btn2">Learn More</a>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="prev">&#8592;</button>
+                <button class="next">&#8594;</button>
+            </div>
+        </section>
+        <!-- Community Photos -->
+        <section class="photos block" id="photo">
+            <div class="photo-content">
+                <div class="heading">
+                    <h1><span>Top Weekly</span> Community Photos</h1>
+                    <p>Top weekly community Meowpedia cat photos</p>
+                </div>
+
+                <div class="box-container">
+                    <div class="box1">
+                        <img src="topphoto06.png" alt="">
+                        <img src="topphoto05.png" alt="">
+                        <img src="topphoto04.jpg" alt="">
+                    </div>
+
+                    <div class="box2">
+                        <img src="topphoto03.jpg" alt="">
+                        <img src="topphoto02.png" alt="">
+                        <img src="topphoto01.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn2">Learn More</a>
+            </div>
+        </section>
+        <!-- Contact Us -->
+        <section class="contact block" id="contact">
+            <div class="contact-content">
+                <h1>Want to join<br>community <br>with us?</h1>
+                <button class="btn">Join Now</button>
+            </div>
+            <div class="contact-image">
+                <img src="cat_service.jpg" alt="school logo">
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href="https://wa.me/60162855100"><i class='bxl  bx-whatsapp'  ></i> </a>
+                    <a href="https://github.com/K01J10W19"><i class='bxl  bx-github'  ></i> </a>
+                    <a href="mailto:kohchunwei757@gmail.com"><i class='bxl  bx-gmail'  ></i> </a>
+                    <a href="#home"><i class='bx  bx-arrow-up'  ></i> </a>
+                </div>
+            </div>
+            <div class="footer-text">
+                <p>Copyright &copy; 2025 by Koh Chun Wei | All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
